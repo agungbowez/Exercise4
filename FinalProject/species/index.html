@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Species List</title>
+	<style>
+	    h1{
+            text-align:center;
+	        font-weigth:bold;
+	        font-size:50px;
+        }
+         
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2
+        }
+	</style>
+
+    </head>
+
+<body>
+    <h1>Planet List</h1>
+    <input type="text" id="myInput" onkeyup="filteringTable()" placeholder="Cari Planet Kamu disini.." title="Type in a name"><br>
+
+    <p><button onclick="sortTable()">Sort</button></p> <br>
+
+    <table id="tablePlanets" cellpadding="10" cellspacing="1" border="1">
+
+        <tbody>
+
+            <thead>
+
+                <th>Nama</th>
+                <th>Rotation Period</th>
+                <th>Orbital Period</th>
+                <th>Diameter</th>
+                <th>Climate</th>
+                <th>Gravity</th>
+                <th>Terrain</th>
+                <th>Surface Water</th>
+                <th>Population</th>
+                <th>Residents</th>
+                <th>Films</th>
+                <th>Created</th>
+                <th>Edited</th>
+                <th>Url</th>
+            </thead>
+
+        </tbody>
+
+    </table>
+
+
+<script src="swapiSpecies.js"></script>
+
+</body>
+</html>
